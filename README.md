@@ -13,8 +13,8 @@ Landing page baseada nas páginas curso_monza e curso_corsa. Conteúdo adaptado 
 
 ## Pendências para abertura de vendas
 
-Configurar formulário AtendeIA e checkout ESPECÍFICOS da S10 no script e atualizar os textos de inscrição. Confirmar preço, parcelamento, prazo de acesso, certificado e suporte antes de anunciá-los. Os botões atualmente mostram inscrições em breve; não coletam dados e não redirecionam para outros cursos.
+Configurar formulário AtendeIA e checkout ESPECÍFICOS da S10 no script e atualizar os textos de inscrição. Preço confirmado: R$ 89,00 à vista; parcelamento igual ao Monza, até 12x de R$ 9,20 com juros. Confirmar prazo de acesso, certificado e suporte antes de anunciá-los. Os botões atualmente mostram inscrições em breve; não coletam dados e não redirecionam para outros cursos.
 
-Adicionar foto real do curso e imagem social quando fornecidas; depois configurar og:image, twitter:image, og:url e canonical com o domínio final. O bloco de destaque atual é tipográfico e não simula uma foto do treinamento. Favicon de chave de boca incluído.
+Hero: public/s10-estudio.webp, imagem ilustrativa gerada por IA de uma S10 prata em estúdio preto com iluminação amarela. Configurar imagem social, og:url e canonical com o domínio final. Favicon de chave de boca incluído.
 
 Não foram anunciados anos/modelos compatíveis sem confirmação. O tempo do SRT não foi convertido em carga horária comercial. A transcrição começa com peças já desmontadas e não mostra a execução do teste em máquina; a página acompanha esses limites. Depoimentos reaproveitados das referências estão identificados como de outros treinamentos.
