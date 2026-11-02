@@ -15,6 +15,6 @@ Landing page baseada nas páginas curso_monza e curso_corsa. Conteúdo adaptado 
 
 Configurar formulário AtendeIA e checkout ESPECÍFICOS da S10 no script e atualizar os textos de inscrição. Preço confirmado: R$ 89,00 à vista; parcelamento igual ao Monza, até 12x de R$ 9,20 com juros. Confirmar prazo de acesso, certificado e suporte antes de anunciá-los. Os botões atualmente mostram inscrições em breve; não coletam dados e não redirecionam para outros cursos.
 
-Hero: public/s10-estudio.webp, imagem ilustrativa gerada por IA de uma S10 prata em estúdio preto com iluminação amarela. Configurar imagem social, og:url e canonical com o domínio final. Favicon de chave de boca incluído.
+Hero: public/hero-s10.webp, foto do instrutor editada com IA para apresentar a caixa S10/Blazer, com fundo escuro e iluminação dourada. Seção do veículo: public/s10-estudio.webp, imagem ilustrativa de uma S10 prata, no padrão Corsa. Configurar imagem social, og:url e canonical com o domínio final. Favicon de chave de boca incluído.
 
 Não foram anunciados anos/modelos compatíveis sem confirmação. O tempo do SRT não foi convertido em carga horária comercial. A transcrição começa com peças já desmontadas e não mostra a execução do teste em máquina; a página acompanha esses limites. Depoimentos reaproveitados das referências estão identificados como de outros treinamentos.
