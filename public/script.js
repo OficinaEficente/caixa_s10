@@ -83,11 +83,35 @@ async function initMeta(){
 'use strict';
 const modal = document.querySelector('#enrollment');
 let opener;
+let formLoaded = false;
+function loadForm() {
+  if (formLoaded) return;
+  formLoaded = true;
+  const host = document.querySelector('#form-host');
+  host.replaceChildren();
+  const script = document.createElement('script');
+  script.src = 'https://atendeia.riodelaplatamkt.com.br/atendeia-form.js?v=20260925-4';
+  script.dataset.formKey = '5a8e9a9773238e0bcc90c9337270b915c2f95dfe6edc6ff9';
+  script.async = true;
+  script.onerror = () => {
+    formLoaded = false;
+    host.replaceChildren();
+    const retry = document.createElement('button');
+    retry.type = 'button';
+    retry.className = 'cta';
+    retry.textContent = 'Tentar carregar o formulário novamente';
+    retry.addEventListener('click', loadForm, { once: true });
+    host.append(retry);
+  };
+  host.append(script);
+}
 document.querySelectorAll('[data-enroll]').forEach(button => {
   button.addEventListener('click', () => {
     opener = button;
     modal.showModal();
-    if(typeof window.gtag==='function') window.gtag('event','open_enrollment_info',{content_name:CONTENT_NAME});
+    loadForm();
+    trackMeta('InitiateCheckout',{content_name:CONTENT_NAME,value:VALUE,currency:CURRENCY,cta_label:button.dataset.label||'inscricao'});
+    if(typeof window.gtag==='function') window.gtag('event','open_enrollment_form',{content_name:CONTENT_NAME,value:VALUE,currency:CURRENCY,event_label:button.dataset.label});
     document.body.classList.add('modal-open');
   });
 });
